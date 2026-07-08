@@ -39,6 +39,7 @@
         .flexbox{
             /* display: flex; Normal flex makes the parent a block level element and makes the child an inline element*/
             display: flex;
+            flex-wrap: wrap;
             /* If the width was given it only takes that width which makes int not a block level element */
             background-color: blueviolet;
             border: 2px solid black;
@@ -64,6 +65,7 @@
             background-color: blueviolet;
             border: 2px solid black;
             margin: 10px 0px;
+            flex-wrap: wrap;
             /* Justify content doest work on inline flex since the parent tag itself makes it inline */
         }
         .flexbox-2{
@@ -71,6 +73,9 @@
             width: 100%;
             max-width: 500px;
             border: 2px solid black;
+            flex-wrap: wrap; /*Wrap the flexbox to the page for the box to be responsive to different screen sizes*/
+            /* flex-wrap: wrap-reverse; This wrap in reverse
+            flex-wrap: nowrap; this removes a wrap*/
         }
     </style>
 </head>
