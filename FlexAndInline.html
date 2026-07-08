@@ -46,9 +46,14 @@
             justify-content: space-between; /*make space only in between the tags*/
             justify-content: space-evenly; /*make space evenly in the parent box*/
             flex-direction: row; /*Default behavior*/
-            flex-direction: column; /*This makes the child tags to takes the full width if the width has not defined to the flex box*/
+            /* flex-direction: column; This makes the child tags to takes the full width if the width has not defined to the flex box */
             flex-direction: row-reverse;   /*Both Are*/
-            flex-direction: column-reverse;/*Same behavior in the reverse direction*/
+            /* flex-direction: column-reverse;Same behavior in the reverse direction */
+            justify-self: flex-end;
+            justify-self: center; 
+            justify-self: flex-start;/*all three above are same behavior but in justify-self parent takes the child tags behavior */
+            align-items: baseline;/*Align items used to align items inside the flex box*/
+            
         }
         .flexbox-1{
             display: inline-flex;
