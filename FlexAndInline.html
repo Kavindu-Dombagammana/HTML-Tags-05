@@ -28,12 +28,61 @@
         .four{
             background-color: brown;
         }
+        h3{
+            text-align: center;
+        }
+        /* parent stays as a block level element while the child tags turns into inline elements */
+        .flexbox{
+            /* display: flex; Normal flex makes the parent a block level element and makes the child an inline element*/
+            display: flex;
+            /* If the width was given it only takes that width which makes int not a block level element */
+            background-color: blueviolet;
+            border: 2px solid black;
+            margin: 10px 0px;
+            justify-content: flex-start; /* take the child content to the start of the parent box this is the default behavior of flex*/
+            justify-content: flex-end; /* takes the child tags to the ned of the parent box*/
+            justify-content: center; /*make the child tags center to the parent box */
+            justify-content: space-around; /*make space around te child tags*/
+            justify-content: space-between; /*make space only in between the tags*/
+            justify-content: space-evenly; /*make space evenly in the parent box*/
+            flex-direction: row; /*Default behavior*/
+            flex-direction: column; /*This makes the child tags to takes the full width if the width has not defined to the flex box*/
+            flex-direction: row-reverse;   /*Both Are*/
+            flex-direction: column-reverse;/*Same behavior in the reverse direction*/
+        }
+        .flexbox-1{
+            display: inline-flex;
+            background-color: blueviolet;
+            border: 2px solid black;
+            margin: 10px 0px;
+            /* Justify content doest work on inline flex since the parent tag itself makes it inline */
+        }
     </style>
 </head>
 <body>
     <a href="index.html">home</a>
-    <a href="FlexAndInline.html">flexbox</a>
+    <a href="FlexAndInline.html">flexbox</a><br>
+    <h3>Display:Flex</h3>
     <div class="flexbox">
+        <p class="one">A</p>
+        <p class="two">B</p>
+        <p class="three">C</p>
+        <p class="four">D</p>
+    </div>
+        <div class="flexbox">
+        <p class="one">A</p>
+        <p class="two">B</p>
+        <p class="three">C</p>
+        <p class="four">D</p>
+    </div>
+    <h3>Display:Inline-Flex</h3>
+    <div class="flexbox-1">
+        <p class="one">A</p>
+        <p class="two">B</p>
+        <p class="three">C</p>
+        <p class="four">D</p>
+    </div>
+    <div class="flexbox-1">
         <p class="one">A</p>
         <p class="two">B</p>
         <p class="three">C</p>
